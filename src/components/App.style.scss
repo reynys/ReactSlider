@@ -1,0 +1,58 @@
+/**
+ * @name ReactSlider
+ * @author Reinis Makulis <reinis.makulis@gmail.com>
+ * @license GPL-3.0
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+$breakpoint-desktop: 1024px;
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.App {
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+        height: 95vh;
+        width: 95vw;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        height: 60vh;
+        width: 60vw;
+    }
+
+    h1, h2, h3, h4 {
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .slide-content-example {
+        height: 100%;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .slide-content-example2 {
+        background: url('../assets/images/landscape.jpg');
+        background-size: cover;
+        height: 100%;
+        text-align: right;
+        color: #eee;
+        padding: 10px;
+    }
+}
